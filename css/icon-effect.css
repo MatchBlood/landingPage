@@ -47,7 +47,7 @@
 	transition: background 0.3s, color 0.3s, box-shadow 0.3s;
 }
 .hi-icon-effect .hi-icon:after { display: none; }
-.no-touch .hi-icon-effect .hi-icon:hover { color: #019875; box-shadow: 0 0 0 4px #019875; }
+.no-touch .hi-icon-effect .hi-icon:hover { color: #E72D59; box-shadow: 0 0 0 4px #E72D59; }
 .no-touch .hi-icon-effect .hi-icon:hover:before {
 	-webkit-animation: toRightFromLeft 0.3s forwards;
 	-moz-animation: toRightFromLeft 0.3s forwards;

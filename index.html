@@ -210,12 +210,11 @@
 				<div class="contact_form">  
 			<div id="note"></div>
 		<div id="fields">
-		<form id="ajax-contact-form" method="GET" action="suscribe.php">
+		<form id="ajax-contact-form" action="subscribe/" method="post" accept-charset="UTF-8">
 			<p class="form_info">correo electr&oacute;nico <span class="required">*</span></p>
-			<input class="span5" type="text" name="email" value=""  />
+			<input class="span5" type="email" name="email" required/>
 		</br>
-			<input type="submit" class="btn btn-colour-red marg-right5" value="Enviar" />
-			<!-- <input type="reset" class="btn btn-colour" value="borrar" /> -->
+			<input type="submit" class="btn btn-colour-red marg-right5" name="subscribe" value="Enviar" />
 			<div class="clear"></div>
 		</form> 
 	</div>

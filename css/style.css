@@ -1044,7 +1044,7 @@ h6.left { font-size: 12px; margin: 10px 0px; text-align: left!important; display
 }
 #ajax-contact-form input.btn:hover, #ajax-contact-form input.btn:focus {
 	background: transparent;
-	border: 1px solid #C11E49!important; color: #FFFFF !important;
+	border: 1px solid #FFFFFF !important; color: #FFFFF !important;
 	background: #EF5383;
 	text-shadow: none;
 	-webkit-box-shadow: none;

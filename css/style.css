@@ -27,6 +27,26 @@ Purchase:  http://themeforest.net/user/josweb
 /*-----------------------------------------------------------------------------------*/
 /*	01: GENERAL STYLING
 /*-----------------------------------------------------------------------------------*/
+.dzsportfolio.skin-clean .portitem .the-overlay > .the-overlay-anchor
+{
+    display:none !important;
+}
+
+.dzsportfolio.skin-clean .portitem .the-overlay > .the-overlay-anchor-link .plus-link
+{
+    display:none !important;
+}
+
+.the-feature:hover
+{
+    -webkit-filter: blur(2px);
+}
+
+.description
+{
+    color:white;
+}
+
 body {
 	margin: 0; padding: 0;
 	font: 16px/28px 'Lato', sans-serif;

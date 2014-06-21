@@ -318,13 +318,13 @@
 			    fullWidth:"on",
 			    shadow:0					
 	    });
-	    setInterval(change, 4000);
+	    setInterval(change, 1000);
 	    function change() {
 	        $('#text-change').fadeOut(500, function () {
 	            $(this).text(sentences[counter]).fadeIn(500);
 	        });
 	        counter++;
-	        if (counter == 4) countert = 0;
+	        if (counter > 4) counter = 0;
 	    }
 	});
 //]]>

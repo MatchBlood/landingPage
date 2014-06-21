@@ -247,7 +247,7 @@
 			</div>
 		<!-- FEATURE STRIP -->
 			<div class="strip">
-				<span>Cada diez segundos alguien en M&eacute;xico necesita sangre.</span>
+				<span id="text-change">Cada diez segundos alguien en M&eacute;xico necesita sangre.</span>
 				<!--<span class="marg-left10"></span>-->
 				<!--<a class="btn btn-colour-red" href="#">Suscr&iacute;bete</a>-->
 			</div>
@@ -301,8 +301,9 @@
 <script>
 	//<![CDATA[
     $(document).ready(function () {
-	    if ($.fn.cssOriginal!=undefined)
-	        $.fn.css = $.fn.cssOriginal;
+        var sentences = ['Joshua', 'Arpad', 'Erick', 'Martin', 'Jorge'];
+        var counter = 0;
+	    if ($.fn.cssOriginal!=undefined) $.fn.css = $.fn.cssOriginal;
 	    $('.fullwidthbanner').revolution({
 			    delay:9000,
 			    startwidth:950,
@@ -317,6 +318,14 @@
 			    fullWidth:"on",
 			    shadow:0					
 	    });
+	    setInterval(change, 4000);
+	    function change() {
+	        $('#text-change').fadeOut(500, function () {
+	            $(this).text(sentences[counter]).fadeIn(500);
+	        });
+	        counter++;
+	        if (counter == 4) countert = 0;
+	    }
 	});
 //]]>
 </script>

@@ -230,7 +230,7 @@ i.service-icon { margin: 5px auto 25px auto!important; text-align: center!import
 /**** LOGO ****/
 .logo a{
  	float: left; 
-	margin: 40px 0 0px 0;
+	margin: 10px 0 10px 0;
 	webkit-transition: all 0.3s ease-in;  
     -moz-transition: all 0.3s ease-in;  
     -o-transition: all 0.3s ease-in;  
@@ -261,7 +261,7 @@ i.service-icon { margin: 5px auto 25px auto!important; text-align: center!import
 }
 .logo-sticky a{
  	float: left; 
-	margin: 22px 0 0px 0;
+	margin: 10px 0 10px 0;
 	webkit-transition: all 0.3s ease-in;  
     -moz-transition: all 0.3s ease-in;  
     -o-transition: all 0.3s ease-in;  
@@ -274,7 +274,8 @@ i.service-icon { margin: 5px auto 25px auto!important; text-align: center!import
 	float: right;
 	text-decoration: none;
 	padding: 8px 12px;
-	margin:20px 0 0;
+	margin-top:10px;
+    margin-bottom:20px;
 	font-size:20px;
 }
 .menu {

@@ -7,6 +7,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Permite conectar a donantes de sangre con solicitantes">
 		<meta name="author" content="Matchblood">
+        <meta name="keywords" content="donar, donacion, donacion en tijuana" />
+        <meta name="robots" content="INDEX, FOLLOW">
+        <link rel="shortcut icon" href="#" type="image/x-icon"/>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 
 		<!-- Google Fonts -->
@@ -83,7 +86,7 @@
 		<!-- // header -->
 		
 		<!-- Subscribe -->
-		<div class="span1 subscribe_block">
+		<div class="span1 hidden-phone hidden-tablet subscribe_block ">
 			<a href="#subscribe"><img src="img/message.png" alt="subscribe"/></a>
 		</div>
 		
@@ -118,10 +121,10 @@
 						
 						<!-- Caption -->
 						<div class="caption lfl stl rev-textGray rev-left" data-x="left" data-y="190" data-speed="800" data-start="1100" data-easing="easeOutExpo">
-							<p>Más de 11.000 donaciones de sangre son necesarias todos los días.
+							<p>MÃ¡s de 11.000 donaciones de sangre son necesarias todos los dÃ­as.
 							<br />
-							La donación de sangre es un simple proceso de cuatro pasos:<br />
-							registro, historial médico y físico, donación y recuperación.</p>
+							La donaciÃ³n de sangre es un simple proceso de cuatro pasos:<br />
+							registro, historial mÃ©dico y fÃ­sico, donaciÃ³n y recuperaciÃ³n.</p>
 						</div>
 						
 						<!-- Caption -->
@@ -156,9 +159,9 @@
 
 						<!-- Caption -->
 						<div class="caption lfl stl rev-textGray rev-left rev-rightAlign" data-x="right" data-y="190" data-speed="800" data-start="1700" data-easing="easeOutExpo">
-							<p class="white">Un donante sano puede donar células rojas<br />
-							 de la sangre cada 56 días , o células rojas dobles<br />
-							cada 112 días.</p>
+							<p class="white">Un donante sano puede donar cÃ©lulas rojas<br />
+							 de la sangre cada 56 dÃ­as , o cÃ©lulas rojas dobles<br />
+							cada 112 dÃ­as.</p>
 						</div>
 						
 						<div class="caption sfb rev-title medium-white" data-x="20" data-y="360" data-speed="800" data-start="1900" data-easing="easeOutExpo"></div>	
@@ -187,8 +190,8 @@
 					<div class="hi-icon-wrap  hi-icon-effect">
 						<a href="javascript:{}" class="hi-icon icon-lineuser"></a>
 						<h3>Importancia</h3>
-						<p>México, con déficit de 66% de donadores de sangre.</p>
-						<p>Según la OMS.</p>
+						<p>MÃ©xico, con dÃ©ficit de 66% de donadores de sangre.</p>
+						<p>SegÃºn la OMS.</p>
 					</div>
 				</div>
 				
@@ -196,7 +199,7 @@
 					<div class="hi-icon-wrap hi-icon-effect">
 						<a href="javascript:{}" class="hi-icon icon-linenote"></a>
 						<h3>Proceso</h3>
-						<p>La donación de sangre es un proceso seguro. Una aguja estéril se utiliza sólo una vez por cada donante y luego se descarta.</p>
+						<p>La donaciÃ³n de sangre es un proceso seguro. Una aguja estÃ©ril se utiliza sÃ³lo una vez por cada donante y luego se descarta.</p>
 					</div>
 				</div>
 						
@@ -212,15 +215,15 @@
 		<div class="container" id="subscribe">
 			<h1>suscr&iacute;bete</h1>
 			<h2 class="small">Para recibir las &uacute;ltimas actualizaciones y acceso exclusivo a la beta</h2>
-			<div class="span8 offset2 center">
+			<div class="span8 offset2 center" style="margin-left: 16%;">
 				<div class="contact_form">  
 					<div id="note"></div>
 					<div id="fields">
 						<form id="ajax-contact-form" name="form" accept-charset="UTF-8">
 							<p class="form_info">correo electr&oacute;nico <span class="required">*</span></p>
-							<input class="span5" type="email" name="email" required/>
+							<input class="span5" type="email" id="email" name="email" required/>
 						</br>
-							<input type="submit" id="save_subscribe" class="btn btn-colour-red marg-right5" name="subscribe" value="Enviar" />
+							<input type="submit" id="save_subscribe" class="btn btn-colour-red marg-right5" name="subscribe" value="Enviar"/>
 							<div class="clear"></div>
 						</form> 
 					</div>
@@ -307,7 +310,7 @@
 		 <script>
 		  	//<![CDATA[
 		      $(document).ready(function () {
-		         var sentences = ['Cada cuatro segundos alguien requiere sangre con urgencia', 'Donar sangre puede salvar una o incluso varias vidas', 'Un hombre puede donar hasta cuatro veces al año y las mujeres de tres a cuatro veces', 'El volumen de sangre se recupera en cuestión de horas y la incorporación de todos los elementos celulares tarda de cuatro a seis días', 'En México la recuperación de sangre es de menos del 65% del 100% necesario'];
+		         var sentences = ['Cada cuatro segundos alguien requiere sangre con urgencia', 'Donar sangre puede salvar una o incluso varias vidas', 'Un hombre puede donar hasta cuatro veces al aÃ±o y las mujeres de tres a cuatro veces', 'El volumen de sangre se recupera en cuestiÃ³n de horas y la incorporaciÃ³n de todos los elementos celulares tarda de cuatro a seis dÃ­as', 'En MÃ©xico la recuperaciÃ³n de sangre es de menos del 65% del 100% necesario'];
 		         var counter = 0;
 		 	    if ($.fn.cssOriginal!=undefined) $.fn.css = $.fn.cssOriginal;
 		  	    $('.fullwidthbanner').revolution({
@@ -325,22 +328,22 @@
 		 	        if (counter > 4) counter = 0;
 		 	    }
 
-		 	    $('.portitem-tobe').hover(function () {
-		 	        $(this).find('.the-feature').css({
-		 	            "-webkit-filter": "blur(2px)"
-		 	        });
-		 	        $(this).find('.the-overlay').append($('<span class="description">some description text</span>').fadeIn(2000));
-		 	    }, function () {
-		 	        $(this).find('.the-feature').css({
-		 	            "-webkit-filter": "blur(0)"
-		 	        });
-		 	        $(this).find('.the-overlay span').remove();
-		 	    });
-
-		 	    $('.the-overlay').children().remove();
+ 		 	    $('.portitem-tobe').hover(function () {
+ 		 	        $(this).find('.the-feature').css({
+ 		 	            "-webkit-filter": "blur(2px)"
+ 		 	        });
+ 		 	        $(this).find('.the-overlay').append($('<span class="description">some description text</span>').fadeIn(2000));
+ 		 	    }, function () {
+ 		 	        $(this).find('.the-feature').css({
+ 		 	            "-webkit-filter": "blur(0)"
+ 		 	        });
+ 		 	        $(this).find('.the-overlay span').remove();
+ 		 	    });
+ 
+ 		 	    $('.the-overlay').children().remove();
 		  	});
 		  //]]>
-		  </script>
+		</script>
 		<script src="js/dzsportfolio.js" type="text/javascript"></script>
 		<script src="js/jquery.isotope.min.js" type="text/javascript"></script>
 		<script src="js/scroller.js" type="text/javascript"></script>
